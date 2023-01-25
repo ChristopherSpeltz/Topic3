@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@200&family=Roboto+Mono:ital,wght@1,300&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css style sheet -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+
+    <title>Student Feedback Form</title>
+  </head>
+  <body class="m-4 bg-primary-subtle">
+    <!-- jumbotron element -->
+    <div class="jumbotron border border-primary border-3 rounded-pill m-2">
+      <h1 class="text-center text-primary m-2">
+        Please provide feedback to help us improve. Thanks
+      </h1>
+    </div>
+    <!-- beginning of responsive row -->
+    <div class="row">
+        <!-- form instructions -->
+      <div class="col-md-5">
+        <div class="ml-3">
+            <p>We'd love to hear what you think of our program.</p>
+            <p>Your feedback will help us improve student campus life.</p>
+            <p>Please use this form to help us improve.</p>
+            <p>If you would like to be contact, please include your contact information. If not, you can also sumbit the form anonymous. Thanks</p>
+        </div>
+      </div>
+      <!-- beginning of form -->
+      <div class="col-md-7">
+        <form class="m-2">
+          <div>
+            <label for="name">Name:</label
+            ><input id="name" class="form-control" /><br />
+            <label for="email">Email:</label
+            ><input id="email" class="form-control" type="email" /><br />
+            <label for="comments">Comments:</label><br />
+            <textarea
+              id="comments"
+              class="form-control"
+              cols="30"
+              rows="10"
+              required
+            ></textarea
+            ><br />
+          </div>
+
+          <p class="form-text">Are you a current student?</p>
+
+          <div class="form-check">
+            <br />
+            <input
+              type="radio"
+              name="current-student"
+              id="yes"
+              class="form-check-input"
+              checked
+            />
+            <label for="yes" class="form-check-label">Yes</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="current-student"
+              id="no"
+              class="form-check-input"
+            />
+            <label for="no" class="form-check-label">No</label>
+          </div>
+
+          <div>
+            <input type="submit" class="btn btn-primary mt-3" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.jumbotron {
+  font-family: "Kavoon", cursive;
+}
+
+body {
+  font-family: "Acme", sans-serif;
+  background-image: linear-gradient(to right, #fffff0, #ff0000, #821d08);
+}

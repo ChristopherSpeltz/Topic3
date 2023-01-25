@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Kavoon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <title>So You Think You Can Code Conference</title>
+  </head>
+  <body>
+    <!-- jumbotron section -->
+    <div class="jumbotron text-center">
+      So You Think You Can Code Conference Registration
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="m-3">
+          <p>
+            COME ONE! COME ALL! Here's your chance to show off your coding skills.
+          </p>
+        </div>
+      </div>
+      <!-- form section -->
+      <div class="col-md-6">
+        <form action="" class="m-2">
+          <div>
+            <!-- Name, a text input for the registrant's name, max length 70 characters. Required. -->
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              maxlength="70"
+              class="form-control"
+              required
+            /><br />
+            <!-- Password. Use a password input. Required. -->
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="form-control"
+              required
+            />
+            <!-- Email, using email input.  Required. -->
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              required
+            />
+            <!-- Date of birth, a date input element. Required.  -->
+            <label for="dob">Date Of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              class="form-control"
+              required
+            />
+          </div>
+          <!-- T-shirt size, either small, medium, or large. (All attendees receive a free t-shirt.) Use select and option elements. Required. -->
+          <div>
+            <label for="tshirts">Please select T-shirt size:</label>
+            <select name="tshirts" id="tshirts" required>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <!--Receive email updates? Two radio buttons to select if wanting to receive email from conference sponsors; yes or no. Required. The radio buttons should work as radio buttons, selecting one button should deselect the other.
+  -->
+          <p class="form-text">
+            Sign up for email notifications from sponsors?
+          </p>
+
+          <div class="form-check">
+            <!-- <br /> -->
+            <input
+              type="radio"
+              name="email-updates"
+              id="yes"
+              class="form-check-input mt-0"
+            />
+            <label for="yes" class="form-check-label">Yes</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="email-updates"
+              id="no"
+              class="form-check-input mt-0"
+            />
+            <label for="no" class="form-check-label">No</label>
+          </div>
+
+          <!-- Choose sessions, Two checkbox elements to select if attending the morning, and/or afternoon conference sessions. -->
+          <p class="form-text">Which session would you like to attend?</p>
+
+          <div class="form-check">
+            <input
+              type="checkbox"
+              name="morning-session"
+              id="morning-session"
+              value="morning"
+              class="form-check-input"
+            />
+            <label for="morning-session" class="form-check-label"
+              >Morning</label
+            >
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              name="afternoon-session"
+              id="afternoon-session"
+              value="afternoon"
+              class="form-check-input"
+            />
+            <label for="fternoon-session" class="form-check-label"
+              >Afternoon</label
+            >
+          </div>
+          <!-- Special Requests, A textarea (for entering more than one line) any special requests. Set the size to be 7 rows and 70 columns. Not required. -->
+          <div>
+            <label for="requests"
+              >Pleae make note of any special requests:</label
+            ><br />
+            <textarea
+              id="requests"
+              class="form-control"
+              cols="70"
+              rows="7"
+            ></textarea
+            ><br />
+          </div>
+          <!-- A submit button - input type = submit. -->
+          <div>
+            <input type="submit" class="btn btn-dark"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
